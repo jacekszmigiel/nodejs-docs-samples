@@ -30,8 +30,8 @@ exports.helloworld = function (context, data) {
 // [END walkthrough_pubsub]
 
 // [START walkthrough_http]
-exports.hellohttp = function (request, response) {
+exports.hellohttp = function (req, res) {
   // Use the response argument to send data back to the caller.
-  response.send('My GCF Function: ' + request.body.message);
+  res.send('My GCF Function: ' + req.body.message);
 };
 // [END walkthrough_http]
